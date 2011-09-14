@@ -1,0 +1,7 @@
+3ec54e221545d4eb63912a5327e805ea *DESCRIPTION
+7dd3c164abc64183f0681eaf7b85d73e *NAMESPACE
+4cb8bcff23829fcb59dc8dfde1dbdecf *NEWS
+770a7b76ccff6f95d86152999543269b *R/fastmatch.R
+ddc4a8e8795d9bc6be2c7d507b7e160b *R/match.hash.R
+1cf3221f784b90ed613d2454cc00a727 *man/fmatch.Rd
+fb922bd62663c8961bcc63662e9dc691 *src/fastmatch.c
