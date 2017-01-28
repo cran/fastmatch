@@ -1,7 +1,31 @@
  NEWS for fastmatch
 --------------------
 
-0.1-4	2012-01-12
+1.1-0	(under development)
+    o	add fmatch.hash() which will create a hash table that can
+	be used later with fmatch(). This can be used in cases where
+	attaching the hash to the table implicitly is not reliable.
+
+    o	added ctapply() - a fast version of tapply()
+
+    o	added coalesce() - fast way of grouping unique values into
+	contiguous groups (in linear time).
+
+    o	added %fin% - a fast version of %in%
+
+    o	fastmatch now supports long vectors. Note that the hash
+	function is the same as in R and thus it uses at most 32-bits,
+	hence long vectors can be used, but they must have less than
+	2^32 (~4e9) unique values.
+
+    o	bugfix: matching reals against a table that contains NA or NaNs
+	would not match the position of those but return NA instead.
+
+    o	bugfix: fix crash when a newly unserialized hash table is
+	used (since the table hash is not stored during serialization).
+
+
+1.0-4	2012-01-12
     o	some R functions (such as subset assignment like x[1] <- 2)
 	can create a new object (with possibly modified content) and
 	copy all attributes including the hash cache. If the original
@@ -11,7 +35,7 @@
 	identify such cases and discard the hash to prevent errorneous
 	results.
 
-0.1-3	2011-12-21
+1.0-3	2011-12-21
     o	match() coerces POSIXlt objects into characters, but so far 
 	fmatch() performed the match on the actual objects.
 	Now fmatch() coerces POSIXlt object into characters just like
@@ -20,13 +44,13 @@
 	POSIXct objects (much more efficient) or use as.character() on
 	the POSIXlt object to create a table that you want to re-use.
 
-0.1-2	2011-09-14
+1.0-2	2011-09-14
     o	bugfix: nomatch was ignored in the fastmatch implementation
 	(thanks to Enrico Schumann for reporting)
 
-0.1-1	2010-12-23
+1.0-1	2010-12-23
     o	minor cleanups
 
-0.1-0	2010-12-23
+1.0-0	2010-12-23
     o	initial release
 
