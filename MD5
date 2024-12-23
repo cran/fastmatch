@@ -1,6 +1,6 @@
-267558a4aa722ff1f86cc592ab669e9b *DESCRIPTION
+9b11854fb01f0b970eaecb4e6fd29f4d *DESCRIPTION
 7e7ec63e6925cc4435d98adf39c5e26d *NAMESPACE
-d971cbb57ea2e908c9649da29a77016e *NEWS
+78c8e6e4a3a9e486747f673514c5fc04 *NEWS
 f89bb99f16073fd87eb20e3a366e0d2e *R/coalesce.R
 c55a081862af768fb0493109ec5b898d *R/ctapply.R
 aa671c24c5486532d61366bd014ecb26 *R/fastmatch.R
@@ -13,4 +13,4 @@ b8d381ce543a5aa2a7f4421bf6c1cbdf *man/ctapply.Rd
 e16cc450c8e002f1b819261653706f88 *src/ctapply.c
 8a0c6919c62fdadda4f8aa303fb63169 *src/dummy.c
 461b9689226fc1550c15289a52c5896a *src/fasthash.c
-bb4791134177dc7ee344e4f9181d5c56 *src/fastmatch.c
+e3e0354cb599c8e4ee4e8f340ff77d3a *src/fastmatch.c
